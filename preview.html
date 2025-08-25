@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashantam Yoga - Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #7a8b6f 0%, #5f6f56 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f7f8f7 100%);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #7a8b6f 0%, #5f6f56 100%);
+        }
+        
+        .sage-50 { background-color: #f7f8f7; }
+        .sage-100 { background-color: #eef0ed; }
+        .sage-600 { background-color: #7a8b6f; }
+        .sage-700 { background-color: #5f6f56; }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-sage-600 to-sage-700 rounded-full flex items-center justify-center">
+                        <span class="text-white text-sm">🕉</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold gradient-text">Prashantam Yoga</h1>
+                        <p class="text-xs text-gray-600">Therapeutic Wellness</p>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-sage-600 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-sage-600 transition-colors">About Me</a>
+                    <a href="#classes" class="text-gray-700 hover:text-sage-600 transition-colors">Classes</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-sage-600 transition-colors">Testimonials</a>
+                    <a href="#contact" class="btn-primary text-white px-6 py-2 rounded-full hover:opacity-90 transition-opacity">Join a Class</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center hero-gradient pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-5xl mx-auto">
+                <div class="inline-flex items-center space-x-2 bg-sage-100 text-sage-700 px-6 py-2 rounded-full text-sm font-medium mb-8">
+                    <span>⭐</span>
+                    <span>Certified Therapeutic Yoga Teacher</span>
+                </div>
+
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                    <span class="block text-gray-900">Yoga for</span>
+                    <span class="block gradient-text">Stress Relief,</span>
+                    <span class="block text-gray-900">Inner Peace & Mental Wellness</span>
+                </h1>
+
+                <p class="text-xl lg:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+                    Transform your mental health through therapeutic yoga. Specialized sessions for stress, 
+                    anxiety, burnout recovery, and holistic wellness with 
+                    <span class="font-semibold text-sage-700">Prashant Madane</span>
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 mb-16">
+                    <a href="#contact" class="btn-primary text-white px-8 py-3 rounded-full hover:opacity-90 transition-opacity inline-flex items-center space-x-2">
+                        <span>Join a Class</span>
+                        <span>→</span>
+                    </a>
+                    <button class="bg-white text-sage-700 border-2 border-sage-200 hover:border-sage-300 px-8 py-3 rounded-full transition-all inline-flex items-center space-x-2">
+                        <span>▶</span>
+                        <span>Watch Introduction</span>
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-sage-700 mb-2">500+</div>
+                        <p class="text-gray-600">Students Transformed</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-sage-700 mb-2">3+</div>
+                        <p class="text-gray-600">Years Experience</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-sage-700 mb-2">100%</div>
+                        <p class="text-gray-600">Satisfaction Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-sage-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="inline-flex items-center space-x-2 bg-sage-100 text-sage-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+                        <span>💚</span>
+                        <span>Meet Your Instructor</span>
+                    </div>
+
+                    <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+                        Hi, I'm <span class="gradient-text">Prashant Madane</span>
+                    </h2>
+                    
+                    <p class="text-xl text-gray-600 leading-relaxed mb-8">
+                        At 28, I've dedicated my life to helping people find peace and healing through therapeutic yoga. 
+                        My journey began with my own struggles with stress and burnout, which led me to discover the 
+                        transformative power of yoga for mental health.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#about-full" class="btn-primary text-white px-8 py-3 rounded-full hover:opacity-90 transition-opacity inline-flex items-center space-x-2">
+                            <span>Learn More About Me</span>
+                            <span>→</span>
+                        </a>
+                        <a href="#contact" class="border-2 border-sage-600 text-sage-600 hover:bg-sage-600 hover:text-white px-8 py-3 rounded-full transition-all">
+                            Book a Session
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="aspect-[4/5] bg-gradient-to-br from-sage-200 via-sage-300 to-sage-400 rounded-3xl overflow-hidden shadow-2xl">
+                        <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-sage-400 to-sage-600">
+                            <div class="text-center text-white">
+                                <div class="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <span class="text-4xl">👤</span>
+                                </div>
+                                <p class="text-sm opacity-75">Prashant Madane</p>
+                                <p class="text-xs opacity-60">Certified Yoga Instructor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-bold text-center mb-6">
+                    Our <span class="gradient-text">Classes & Programs</span>
+                </h2>
+                <p class="text-xl lg:text-2xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
+                    Choose from our carefully designed therapeutic yoga programs, each targeting specific 
+                    mental health challenges. All classes are suitable for beginners.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Stress Management -->
+                <div class="bg-blue-50 border border-blue-200 rounded-3xl p-8 hover:shadow-xl transition-all">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center mb-6">
+                        <span class="text-white text-2xl">🧠</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Stress Management Yoga</h3>
+                    <p class="text-gray-600 mb-6">Learn powerful breathing techniques and gentle movements to reduce stress and calm your mind.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-2 text-gray-700">
+                            <span class="text-sage-600">⏰</span>
+                            <span class="text-sm">60 mins</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-gray-700">
+                            <span class="text-sage-600">👥</span>
+                            <span class="text-sm">Online & Offline</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-white hover:bg-sage-50 text-sage-700 border border-sage-200 py-3 rounded-full transition-all">
+                        Book Now
+                    </button>
+                </div>
+
+                <!-- Burnout Recovery -->
+                <div class="bg-red-50 border border-red-200 rounded-3xl p-8 hover:shadow-xl transition-all">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-red-500 to-red-600 flex items-center justify-center mb-6">
+                        <span class="text-white text-2xl">🛡️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Burnout Recovery Program</h3>
+                    <p class="text-gray-600 mb-6">Comprehensive 8-week program designed specifically for professionals experiencing burnout.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-2 text-gray-700">
+                            <span class="text-sage-600">⏰</span>
+                            <span class="text-sm">90 mins</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-gray-700">
+                            <span class="text-sage-600">👥</span>
+                            <span class="text-sm">Group Sessions</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-white hover:bg-sage-50 text-sage-700 border border-sage-200 py-3 rounded-full transition-all">
+                        Book Now
+                    </button>
+                </div>
+
+                <!-- Yoga Nidra -->
+                <div class="bg-purple-50 border border-purple-200 rounded-3xl p-8 hover:shadow-xl transition-all">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-purple-500 to-indigo-600 flex items-center justify-center mb-6">
+                        <span class="text-white text-2xl">🌙</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Yoga Nidra for Insomnia</h3>
+                    <p class="text-gray-600 mb-6">Deep relaxation techniques to improve sleep quality and combat insomnia naturally.</p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center space-x-2 text-gray-700">
+                            <span class="text-sage-600">⏰</span>
+                            <span class="text-sm">45 mins</span>
+                        </div>
+                        <div class="flex items-center space-x-2 text-gray-700">
+                            <span class="text-sage-600">👥</span>
+                            <span class="text-sm">Evening Sessions</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-white hover:bg-sage-50 text-sage-700 border border-sage-200 py-3 rounded-full transition-all">
+                        Book Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-sage-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl lg:text-5xl font-bold mb-6">
+                    Real Stories of <span class="gradient-text">Transformation</span>
+                </h2>
+                <p class="text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto">
+                    Discover how therapeutic yoga has helped hundreds of people overcome stress, anxiety, and burnout.
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white/90 backdrop-blur-md rounded-3xl p-12 shadow-2xl">
+                    <div class="flex justify-center mb-6">
+                        <div class="flex space-x-1">
+                            <span class="text-yellow-400 text-xl">⭐</span>
+                            <span class="text-yellow-400 text-xl">⭐</span>
+                            <span class="text-yellow-400 text-xl">⭐</span>
+                            <span class="text-yellow-400 text-xl">⭐</span>
+                            <span class="text-yellow-400 text-xl">⭐</span>
+                        </div>
+                    </div>
+
+                    <blockquote class="text-xl lg:text-2xl text-gray-700 leading-relaxed text-center mb-12 font-medium">
+                        "Prashant's therapeutic yoga sessions completely transformed my relationship with stress. After 6 months of burnout recovery classes, I feel like a new person. The breathing techniques he taught me have become my daily superpower."
+                    </blockquote>
+
+                    <div class="flex items-center justify-center space-x-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-sage-400 to-sage-600 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-lg">PS</span>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-gray-900">Priya Sharma</h4>
+                            <p class="text-gray-600">Software Engineer • 29 years old</p>
+                            <p class="text-sage-600 text-sm">Burnout Recovery Program</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-r from-sage-600 to-sage-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">
+                Ready to Begin Your Healing Journey?
+            </h2>
+            <p class="text-xl text-sage-100 mb-8 max-w-2xl mx-auto">
+                Whether you're dealing with stress, anxiety, burnout, or simply want to improve your mental wellness, 
+                I'm here to guide and support you every step of the way.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#" class="bg-white text-sage-700 hover:bg-sage-50 font-medium px-8 py-4 rounded-full transition-all">
+                    Book a Free Consultation
+                </a>
+                <a href="#" class="border-2 border-white text-white hover:bg-white hover:text-sage-700 font-medium px-8 py-4 rounded-full transition-all">
+                    Explore Programs
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-8 h-8 bg-gradient-to-br from-sage-500 to-sage-700 rounded-full flex items-center justify-center">
+                            <span class="text-white text-sm">🕉</span>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold">Prashantam Yoga</h3>
+                            <p class="text-sage-400 text-sm">Therapeutic Wellness</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-6">
+                        Transform your mental health through therapeutic yoga. Specializing in stress relief, 
+                        anxiety management, and burnout recovery.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-4">
+                        <li><a href="#about" class="text-gray-300 hover:text-sage-400 transition-colors">About Me</a></li>
+                        <li><a href="#classes" class="text-gray-300 hover:text-sage-400 transition-colors">Classes & Programs</a></li>
+                        <li><a href="#testimonials" class="text-gray-300 hover:text-sage-400 transition-colors">Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-sage-400 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Services</h4>
+                    <ul class="space-y-4">
+                        <li class="text-gray-300">Stress Management Yoga</li>
+                        <li class="text-gray-300">Burnout Recovery</li>
+                        <li class="text-gray-300">Yoga Nidra for Insomnia</li>
+                        <li class="text-gray-300">Personal Therapy Sessions</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <div class="space-y-4">
+                        <div class="text-gray-300">📍 Pune, Maharashtra</div>
+                        <div class="text-gray-300">📞 +91 98765 43210</div>
+                        <div class="text-gray-300">✉️ prashant@prashantamyoga.com</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-700 mt-12 pt-6 text-center text-gray-400">
+                <p>&copy; 2024 Prashantam Yoga. All rights reserved. | Led by Prashant Madane</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/919876543210" target="_blank" 
+           class="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full shadow-lg flex items-center justify-center text-white transition-colors">
+            <span class="text-2xl">💬</span>
+        </a>
+    </div>
+</body>
+</html>
