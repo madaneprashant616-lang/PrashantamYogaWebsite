@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Lotus } from 'lucide-react'
+import { Menu, X, Flower2 } from 'lucide-react'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,11 +19,9 @@ const Navbar = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'About Me', path: '/about' },
-    { name: 'Classes', path: '/classes' },
-    { name: 'Workshops', path: '/workshops' },
-    { name: 'Testimonials', path: '/testimonials' },
     { name: 'Blog', path: '/blog' },
+    { name: 'Gallery', path: '/gallery' },
+    { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' }
   ]
 
@@ -45,9 +43,9 @@ const Navbar = () => {
             <motion.div
               whileHover={{ rotate: 360 }}
               transition={{ duration: 0.6 }}
-              className="p-2 bg-gradient-to-br from-sage-500 to-sage-700 rounded-full shadow-lg"
+              className="p-2 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full shadow-lg"
             >
-              <Lotus className="h-6 w-6 text-white" />
+              <Flower2 className="h-6 w-6 text-white" />
             </motion.div>
             <div>
               <h1 className="text-2xl font-bold gradient-text">Prashantam Yoga</h1>
@@ -63,15 +61,15 @@ const Navbar = () => {
                 to={item.path}
                 className={`relative font-medium transition-colors duration-300 ${
                   isActive(item.path) 
-                    ? 'text-sage-700' 
-                    : 'text-gray-700 hover:text-sage-600'
+                    ? 'text-blue-700' 
+                    : 'text-gray-700 hover:text-blue-600'
                 }`}
               >
                 {item.name}
                 {isActive(item.path) && (
                   <motion.div
                     layoutId="activeTab"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-sage-600 rounded-full"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-blue-600 rounded-full"
                   />
                 )}
               </Link>
@@ -88,7 +86,7 @@ const Navbar = () => {
           <motion.button
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 text-gray-700 hover:text-sage-600 transition-colors"
+            className="lg:hidden p-2 text-gray-700 hover:text-blue-600 transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </motion.button>
@@ -117,8 +115,8 @@ const Navbar = () => {
                     onClick={() => setIsOpen(false)}
                     className={`block py-2 font-medium transition-colors ${
                       isActive(item.path) 
-                        ? 'text-sage-700 border-l-4 border-sage-600 pl-4' 
-                        : 'text-gray-700 hover:text-sage-600 pl-4'
+                        ? 'text-blue-700 border-l-4 border-blue-600 pl-4' 
+                        : 'text-gray-700 hover:text-blue-600 pl-4'
                     }`}
                   >
                     {item.name}

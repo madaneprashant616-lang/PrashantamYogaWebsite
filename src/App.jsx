@@ -1,20 +1,30 @@
 import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import WhatsAppButton from './components/WhatsAppButton'
 import Home from './pages/Home'
+import Blog from './pages/Blog'
+import Gallery from './pages/Gallery'
+import About from './pages/About'
+import Contact from './pages/Contact'
 
 function App() {
   return (
-    <div style={{ minHeight: '100vh' }}>
-      <div style={{ padding: '20px', background: 'red', color: 'white' }}>
-        <h1>NAVBAR TEST</h1>
-      </div>
+    <div className="min-h-screen bg-white">
+      <Navbar />
       
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
       
-      <div style={{ padding: '20px', background: 'purple', color: 'white' }}>
-        <h1>FOOTER TEST</h1>
-      </div>
+      <Footer />
+      <WhatsAppButton />
     </div>
   )
 }

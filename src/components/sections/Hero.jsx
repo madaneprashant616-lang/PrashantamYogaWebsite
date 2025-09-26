@@ -29,7 +29,7 @@ const Hero = () => {
   const floatingElements = [
     { icon: Heart, color: 'text-pink-500', delay: 0, position: 'top-20 right-10' },
     { icon: Star, color: 'text-yellow-500', delay: 1, position: 'top-32 left-10' },
-    { icon: Shield, color: 'text-sage-500', delay: 2, position: 'bottom-32 right-20' }
+    { icon: Shield, color: 'text-blue-500', delay: 2, position: 'bottom-32 right-20' }
   ]
 
   return (
@@ -77,7 +77,7 @@ const Hero = () => {
           {/* Badge */}
           <motion.div
             variants={itemVariants}
-            className="inline-flex items-center space-x-2 bg-sage-100 text-sage-800 px-6 py-2 rounded-full text-sm font-medium mb-8"
+            className="inline-flex items-center space-x-2 bg-blue-100 text-blue-800 px-6 py-2 rounded-full text-sm font-medium mb-8"
           >
             <Star className="w-4 h-4" />
             <span>Certified Therapeutic Yoga Teacher</span>
@@ -100,7 +100,7 @@ const Hero = () => {
           >
             Transform your mental health through therapeutic yoga. Specialized sessions for stress, 
             anxiety, burnout recovery, and holistic wellness with{' '}
-            <span className="font-semibold text-sage-700">Prashant Madane</span>
+            <span className="font-semibold text-blue-700">Prashant Madane</span>
           </motion.p>
 
           {/* CTA Buttons */}
@@ -128,15 +128,15 @@ const Hero = () => {
             className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto"
           >
             <div className="text-center">
-              <div className="text-3xl font-bold text-sage-700 mb-2">500+</div>
+              <div className="text-3xl font-bold text-blue-700 mb-2">500+</div>
               <p className="text-gray-600">Students Transformed</p>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-sage-700 mb-2">3+</div>
+              <div className="text-3xl font-bold text-blue-700 mb-2">3+</div>
               <p className="text-gray-600">Years Experience</p>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-sage-700 mb-2">100%</div>
+              <div className="text-3xl font-bold text-blue-700 mb-2">100%</div>
               <p className="text-gray-600">Satisfaction Rate</p>
             </div>
           </motion.div>
@@ -153,12 +153,12 @@ const Hero = () => {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="w-6 h-10 border-2 border-sage-300 rounded-full flex justify-center"
+          className="w-6 h-10 border-2 border-blue-300 rounded-full flex justify-center"
         >
           <motion.div
             animate={{ y: [0, 16, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="w-1 h-3 bg-sage-400 rounded-full mt-2"
+            className="w-1 h-3 bg-blue-400 rounded-full mt-2"
           />
         </motion.div>
       </motion.div>
@@ -180,7 +180,7 @@ const Hero = () => {
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
-              className="text-sage-400"
+              className="text-blue-400"
             />
           </svg>
         </div>

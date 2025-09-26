@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { 
-  Lotus, 
+  Flower2, 
   Phone, 
   Mail, 
   MapPin, 
@@ -18,11 +18,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   const quickLinks = [
-    { name: 'About Me', path: '/about' },
-    { name: 'Classes & Programs', path: '/classes' },
-    { name: 'Workshops', path: '/workshops' },
-    { name: 'Testimonials', path: '/testimonials' },
+    { name: 'Home', path: '/' },
     { name: 'Blog', path: '/blog' },
+    { name: 'Gallery', path: '/gallery' },
+    { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' }
   ]
 
@@ -56,10 +55,10 @@ const Footer = () => {
                 transition={{ delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-sage-600 rounded-full mb-4">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-600 rounded-full mb-4">
                   <stat.icon className="w-6 h-6 text-white" />
                 </div>
-                <div className="text-3xl font-bold text-sage-400 mb-2">{stat.value}</div>
+                <div className="text-3xl font-bold text-blue-400 mb-2">{stat.value}</div>
                 <div className="text-gray-300 text-sm">{stat.label}</div>
               </motion.div>
             ))}
@@ -73,12 +72,12 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="p-2 bg-gradient-to-br from-sage-500 to-sage-700 rounded-full">
-                <Lotus className="h-6 w-6 text-white" />
+              <div className="p-2 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full">
+                <Flower2 className="h-6 w-6 text-white" />
               </div>
               <div>
                 <h3 className="text-xl font-bold text-white">Prashantam Yoga</h3>
-                <p className="text-sage-400 text-sm">Therapeutic Wellness</p>
+                <p className="text-blue-400 text-sm">Therapeutic Wellness</p>
               </div>
             </div>
             
@@ -92,7 +91,7 @@ const Footer = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 href="#"
-                className="w-10 h-10 bg-slate-700 hover:bg-sage-600 rounded-full flex items-center justify-center transition-colors"
+                className="w-10 h-10 bg-slate-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </motion.a>
@@ -100,7 +99,7 @@ const Footer = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 href="#"
-                className="w-10 h-10 bg-slate-700 hover:bg-sage-600 rounded-full flex items-center justify-center transition-colors"
+                className="w-10 h-10 bg-slate-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </motion.a>
@@ -108,7 +107,7 @@ const Footer = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 href="#"
-                className="w-10 h-10 bg-slate-700 hover:bg-sage-600 rounded-full flex items-center justify-center transition-colors"
+                className="w-10 h-10 bg-slate-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
               >
                 <Youtube className="w-5 h-5" />
               </motion.a>
@@ -123,9 +122,9 @@ const Footer = () => {
                 <li key={link.path}>
                   <Link
                     to={link.path}
-                    className="text-gray-300 hover:text-sage-400 transition-colors duration-300 flex items-center group"
+                    className="text-gray-300 hover:text-blue-400 transition-colors duration-300 flex items-center group"
                   >
-                    <span className="w-2 h-2 bg-sage-600 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     {link.name}
                   </Link>
                 </li>
@@ -151,7 +150,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6 text-white">Get in Touch</h4>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-sage-400 mt-1 flex-shrink-0" />
+                <MapPin className="w-5 h-5 text-blue-400 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-gray-300">Pune, Maharashtra</p>
                   <p className="text-gray-400 text-sm">Online & Offline Classes Available</p>
@@ -159,15 +158,15 @@ const Footer = () => {
               </div>
               
               <div className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 text-sage-400 flex-shrink-0" />
-                <a href="tel:+919876543210" className="text-gray-300 hover:text-sage-400 transition-colors">
+                <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                <a href="tel:+919876543210" className="text-gray-300 hover:text-blue-400 transition-colors">
                   +91 98765 43210
                 </a>
               </div>
               
               <div className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 text-sage-400 flex-shrink-0" />
-                <a href="mailto:prashant@prashantamyoga.com" className="text-gray-300 hover:text-sage-400 transition-colors">
+                <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
+                <a href="mailto:prashant@prashantamyoga.com" className="text-gray-300 hover:text-blue-400 transition-colors">
                   prashant@prashantamyoga.com
                 </a>
               </div>
@@ -181,13 +180,13 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="px-4 py-2 bg-slate-700 text-white rounded-lg border border-slate-600 focus:outline-none focus:border-sage-500 transition-colors"
+                  className="px-4 py-2 bg-slate-700 text-white rounded-lg border border-slate-600 focus:outline-none focus:border-blue-500 transition-colors"
                 />
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   type="submit"
-                  className="bg-sage-600 hover:bg-sage-700 text-white py-2 rounded-lg transition-colors font-medium"
+                  className="bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg transition-colors font-medium"
                 >
                   Subscribe
                 </motion.button>
@@ -205,10 +204,10 @@ const Footer = () => {
               © {currentYear} Prashantam Yoga. All rights reserved. | Led by Prashant Madane
             </div>
             <div className="flex items-center space-x-6 text-sm">
-              <Link to="/privacy" className="text-gray-400 hover:text-sage-400 transition-colors">
+              <Link to="/privacy" className="text-gray-400 hover:text-blue-400 transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="/terms" className="text-gray-400 hover:text-sage-400 transition-colors">
+              <Link to="/terms" className="text-gray-400 hover:text-blue-400 transition-colors">
                 Terms of Service
               </Link>
               <div className="flex items-center space-x-1 text-gray-400">
