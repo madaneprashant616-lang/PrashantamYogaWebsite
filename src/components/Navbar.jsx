@@ -56,23 +56,28 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
-              <Link
+              <motion.div
                 key={item.path}
-                to={item.path}
-                className={`relative font-medium transition-colors duration-300 ${
-                  isActive(item.path) 
-                    ? 'text-blue-700' 
-                    : 'text-gray-700 hover:text-blue-600'
-                }`}
+                whileHover={{ y: -2 }}
+                transition={{ duration: 0.2 }}
               >
-                {item.name}
-                {isActive(item.path) && (
-                  <motion.div
-                    layoutId="activeTab"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-blue-600 rounded-full"
-                  />
-                )}
-              </Link>
+                <Link
+                  to={item.path}
+                  className={`relative font-medium transition-all duration-300 px-3 py-2 rounded-lg ${
+                    isActive(item.path) 
+                      ? 'text-blue-700 bg-blue-50' 
+                      : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50/50'
+                  }`}
+                >
+                  {item.name}
+                  {isActive(item.path) && (
+                    <motion.div
+                      layoutId="activeTab"
+                      className="absolute -bottom-1 left-0 right-0 h-0.5 bg-blue-600 rounded-full"
+                    />
+                  )}
+                </Link>
+              </motion.div>
             ))}
             <Link
               to="/contact"

@@ -2,6 +2,8 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
+import ScrollProgress from './components/ScrollProgress'
+import BackToTop from './components/BackToTop'
 import Home from './pages/Home'
 import Blog from './pages/Blog'
 import Gallery from './pages/Gallery'
@@ -11,6 +13,7 @@ import Contact from './pages/Contact'
 function App() {
   return (
     <div className="min-h-screen bg-white">
+      <ScrollProgress />
       <Navbar />
       
       <main>
@@ -25,6 +28,7 @@ function App() {
       
       <Footer />
       <WhatsAppButton />
+      <BackToTop />
     </div>
   )
 }

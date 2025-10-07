@@ -67,7 +67,7 @@ const Hero = () => {
         </motion.div>
       ))}
 
-      <div className="container-custom relative z-10">
+      <div className="container-custom relative z-10 pt-20 md:pt-0">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -89,7 +89,7 @@ const Hero = () => {
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
           >
             <span className="block text-gray-900">Yoga for</span>
-            <span className="block gradient-text">Stress Relief,</span>
+            <span className="block gradient-animated">Stress Relief,</span>
             <span className="block text-gray-900">Inner Peace & Mental Wellness</span>
           </motion.h1>
 

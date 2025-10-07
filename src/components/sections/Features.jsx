@@ -129,7 +129,12 @@ const Features = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="group relative p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:-translate-y-2"
+              whileHover={{ 
+                scale: 1.05,
+                rotateY: 5,
+                rotateX: 5
+              }}
+              className="group relative p-8 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:-translate-y-2 card-tilt cursor-pointer"
             >
               {/* Icon */}
               <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${feature.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
