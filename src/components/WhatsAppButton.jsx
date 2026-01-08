@@ -3,7 +3,7 @@ import { MessageCircle, Phone, Clock } from 'lucide-react'
 import { useState, useEffect } from 'react'
 
 const WhatsAppButton = () => {
-  const whatsappNumber = "919876543210" // Replace with actual WhatsApp number
+  const whatsappNumber = "919226943621" // Replace with actual WhatsApp number
   const message = "Hi! I'm interested in learning more about Prashantam Yoga classes and therapeutic yoga sessions. Can you please share more details?"
   const [isExpanded, setIsExpanded] = useState(false)
   const [showInitialMessage, setShowInitialMessage] = useState(false)
@@ -133,7 +133,7 @@ const WhatsAppButton = () => {
           >
             <MessageCircle className="w-6 h-6" />
           </motion.div>
-          
+
           {/* Tooltip for desktop */}
           <div className="absolute right-full mr-3 px-3 py-2 bg-gray-900 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap pointer-events-none hidden lg:block">
             Chat with us on WhatsApp

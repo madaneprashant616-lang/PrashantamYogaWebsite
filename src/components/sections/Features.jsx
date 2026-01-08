@@ -3,12 +3,12 @@ import { useInView } from 'react-intersection-observer'
 import { 
   Brain, 
   Heart, 
-  Shield, 
-  Moon, 
-  Zap, 
   Users,
   Clock,
-  Trophy
+  Trophy,
+  Flame,
+  Leaf,
+  Activity
 } from 'lucide-react'
 
 const Features = () => {
@@ -18,7 +18,25 @@ const Features = () => {
   })
 
   const features = [
-    {
+        {
+  icon: Leaf,
+  title: 'Holistic Wellness',
+  description: 'Traditional yoga approach focusing on long-term physical health, mental peace, and self-awareness.',
+  color: 'from-emerald-500 to-emerald-600'
+},
+   {
+  icon: Flame,
+  title: 'Healthy Weight Management',
+  description: 'Yoga-based routines that support metabolism, digestion, and sustainable weight balance.',
+  color: 'from-orange-500 to-orange-600'
+  },
+   {
+  icon: Activity,
+  title: 'Flexibility & Joint Health',
+  description: 'Therapeutic yoga movements that improve flexibility, joint mobility, and ease everyday stiffness.',
+  color: 'from-purple-500 to-purple-600'
+},
+     {
       icon: Brain,
       title: 'Stress & Anxiety Relief',
       description: 'Specialized techniques to calm your mind, reduce stress hormones, and build mental resilience for daily challenges.',
@@ -31,24 +49,6 @@ const Features = () => {
       color: 'from-red-500 to-red-600'
     },
     {
-      icon: Shield,
-      title: 'Mental Health Support',
-      description: 'Therapeutic yoga approaches for depression, anxiety disorders, and overall mental wellness maintenance.',
-      color: 'from-green-500 to-green-600'
-    },
-    {
-      icon: Moon,
-      title: 'Better Sleep Quality',
-      description: 'Yoga Nidra and relaxation techniques to improve sleep patterns and combat insomnia naturally.',
-      color: 'from-purple-500 to-purple-600'
-    },
-    {
-      icon: Zap,
-      title: 'Energy & Vitality',
-      description: 'Morning yoga sessions to boost energy levels, enhance focus, and start your day with positivity.',
-      color: 'from-yellow-500 to-yellow-600'
-    },
-    {
       icon: Users,
       title: 'Community Support',
       description: 'Join a supportive community of like-minded individuals on their wellness journey together.',
@@ -59,7 +59,7 @@ const Features = () => {
   const stats = [
     {
       icon: Trophy,
-      value: '3+',
+      value: '5+',
       label: 'Years Teaching',
       description: 'Professional experience'
     },
@@ -71,7 +71,7 @@ const Features = () => {
     },
     {
       icon: Clock,
-      value: '1000+',
+      value: '3000+',
       label: 'Hours Practiced',
       description: 'Teaching & learning'
     }
@@ -113,7 +113,7 @@ const Features = () => {
             Why Choose <span className="gradient-text">Therapeutic Yoga</span>?
           </h2>
           <p className="section-subtitle">
-            Discover the transformative power of yoga designed specifically for mental health and wellness. 
+            Discover the transformative power of yoga designed specifically for physical and mental health. 
             Our approach combines ancient wisdom with modern understanding of stress and anxiety management.
           </p>
         </motion.div>

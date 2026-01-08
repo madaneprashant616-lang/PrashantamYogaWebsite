@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { 
-  Flower2, 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Facebook, 
-  Instagram, 
-  Youtube, 
+import {
+  Flower2,
+  Phone,
+  Mail,
+  MapPin,
+  Facebook,
+  Instagram,
+  Youtube,
   Heart,
   Clock,
   Users,
@@ -36,7 +36,7 @@ const Footer = () => {
 
   const stats = [
     { icon: Users, value: '500+', label: 'Happy Students' },
-    { icon: Award, value: '3+', label: 'Years Experience' },
+    { icon: Award, value: '5+', label: 'Years Experience' },
     { icon: Clock, value: '1000+', label: 'Hours Taught' },
     { icon: Heart, value: '100%', label: 'Satisfaction Rate' }
   ]
@@ -80,12 +80,12 @@ const Footer = () => {
                 <p className="text-blue-400 text-sm">Therapeutic Wellness</p>
               </div>
             </div>
-            
+
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Transform your mental health through therapeutic yoga. Specializing in stress relief, 
+              Transform your mental health through therapeutic yoga. Specializing in stress relief,
               anxiety management, and burnout recovery for modern professionals.
             </p>
-            
+
             <div className="flex space-x-4">
               <motion.a
                 whileHover={{ scale: 1.1 }}
@@ -156,14 +156,19 @@ const Footer = () => {
                   <p className="text-gray-400 text-sm">Online & Offline Classes Available</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                <a href="tel:+919876543210" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  +91 98765 43210
+                <a
+                  href="https://wa.me/919226943621"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  +91 92269 43621
                 </a>
               </div>
-              
+
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
                 <a href="mailto:prashant@prashantamyoga.com" className="text-gray-300 hover:text-blue-400 transition-colors">

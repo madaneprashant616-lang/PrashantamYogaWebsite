@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 import { 
   Award, 
   BookOpen, 
@@ -18,6 +19,8 @@ const About = () => {
     threshold: 0.1
   })
 
+  const [imageLoaded, setImageLoaded] = useState(false)
+
   const achievements = [
     {
       icon: Award,
@@ -26,7 +29,7 @@ const About = () => {
     },
     {
       icon: Calendar,
-      title: '3+ Years Experience',
+      title: '5+ Years Experience',
       description: 'Dedicated to helping people heal through yoga'
     },
     {
@@ -37,16 +40,16 @@ const About = () => {
     {
       icon: Target,
       title: 'Specialized Training',
-      description: 'Focus on stress, anxiety & burnout recovery'
+      description: 'Focus on holistic wellness and physical and mental health'
     }
   ]
 
   const specializations = [
+    'Holistic Wellness Programs',
+    'Yoga for Weight Management',
+    'Flexibility & Joint Health',
     'Stress Management & Relief',
-    'Anxiety & Depression Support',
-    'Burnout Recovery Programs',
     'Mental Health Wellness',
-    'Yoga Nidra for Insomnia',
     'Corporate Wellness Sessions'
   ]
 
@@ -80,7 +83,7 @@ const About = () => {
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
                 At 28, I've dedicated my life to helping people find peace and healing through therapeutic yoga. 
                 My journey began with my own struggles with stress and burnout, which led me to discover the 
-                transformative power of yoga for mental health.
+                transformative power of yoga for physical and mental health.
               </p>
             </div>
 
@@ -93,7 +96,7 @@ const About = () => {
               </p>
               
               <p className="text-gray-600 leading-relaxed">
-                Over the past 3+ years, I've had the privilege of guiding over 500 students through their 
+                Over the past 5+ years, I've had the privilege of guiding over 500 students through their 
                 healing journeys, helping them overcome stress, anxiety, burnout, and depression through 
                 carefully designed yoga programs.
               </p>
@@ -151,8 +154,8 @@ const About = () => {
           >
             {/* Main Image */}
             <div className="relative z-10">
-              <div className="aspect-[4/5] bg-gradient-to-br from-sage-200 via-sage-300 to-sage-400 rounded-3xl overflow-hidden shadow-2xl">
-                {/* Placeholder for instructor photo */}
+              <div className="aspect-[4/5] bg-gradient-to-br from-sage-200 via-sage-300 to-sage-400 rounded-3xl overflow-hidden shadow-2xl relative">
+                {/* Background (visible while image loads) */}
                 <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-sage-400 to-sage-600">
                   <div className="text-center text-white">
                     <div className="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -162,6 +165,15 @@ const About = () => {
                     <p className="text-xs opacity-60">Certified Yoga Instructor</p>
                   </div>
                 </div>
+
+                {/* Lazy-loaded image that fades in when ready */}
+                <img
+                  src="/images/profile/prashant_madane_profile_image.jpeg"
+                  alt="Prashant Madane"
+                  loading="lazy"
+                  onLoad={() => setImageLoaded(true)}
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                />
               </div>
 
               {/* Floating Achievement Cards */}

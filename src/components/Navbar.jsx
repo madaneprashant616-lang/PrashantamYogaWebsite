@@ -41,15 +41,24 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
             <motion.div
-              whileHover={{ rotate: 360 }}
-              transition={{ duration: 0.6 }}
-              className="p-2 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full shadow-lg"
-            >
-              <Flower2 className="h-6 w-6 text-white" />
-            </motion.div>
+  whileHover={{ rotate: 360 }}
+  transition={{ duration: 0.6 }}
+  className="h-12 w-12 md:h-14 md:w-14
+             overflow-hidden rounded-full
+             bg-gradient-to-br from-blue-500 to-blue-700
+             shadow-lg flex items-center justify-center"
+>
+  <img
+    src="/prashantamyoga_logo.jpeg"
+    alt="Prashantam Yoga – Therapeutic Yoga for Mental Health"
+    title="Prashantam Yoga"
+    className="h-full w-full object-cover scale-[1.18]"
+    loading="eager"
+  />
+</motion.div>
             <div>
-              <h1 className="text-2xl font-bold gradient-text">Prashantam Yoga</h1>
-              <p className="text-sm text-gray-600 -mt-1">Therapeutic Wellness</p>
+              <h1 className="text-2xl font-bold gradient-text">Prashantam Yoga Classes</h1>
+              <p className="text-sm text-gray-600 -mt-1">Mind Body Harmony</p>
             </div>
           </Link>
 

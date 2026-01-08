@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Clock, 
-  MessageCircle, 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  MessageCircle,
   CheckCircle,
   Calendar,
   Users,
@@ -27,7 +27,7 @@ const Contact = () => {
     // Handle form submission logic here
     console.log('Form submitted:', formData)
     setIsSubmitted(true)
-    
+
     // Reset form after 3 seconds
     setTimeout(() => {
       setIsSubmitted(false)
@@ -46,8 +46,8 @@ const Contact = () => {
     {
       icon: Phone,
       title: 'Phone',
-      details: '+91 98765 43210',
-      link: 'tel:+919876543210'
+      details: '+91 92269 43621',
+      link: 'https://wa.me/919226943621'
     },
     {
       icon: Mail,
@@ -98,7 +98,7 @@ const Contact = () => {
             Thank You! 🙏
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl">
-            Your message has been received. I'll get back to you within 24 hours 
+            Your message has been received. I'll get back to you within 24 hours
             to discuss how therapeutic yoga can support your wellness journey.
           </p>
           <div className="flex justify-center space-x-4">
@@ -130,7 +130,7 @@ const Contact = () => {
             Let's Start Your <span className="gradient-text">Healing Journey</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
-            Ready to transform your relationship with stress and discover inner peace? 
+            Ready to transform your relationship with stress and discover inner peace?
             Get in touch for a personalized consultation.
           </p>
         </div>
@@ -151,7 +151,7 @@ const Contact = () => {
                   Book Your Free Consultation
                 </h2>
                 <p className="text-gray-600 mb-8">
-                  Fill out the form below and I'll get back to you within 24 hours 
+                  Fill out the form below and I'll get back to you within 24 hours
                   to discuss your needs and find the perfect program for you.
                 </p>
 
@@ -201,7 +201,7 @@ const Contact = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-sage-500 transition-all"
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 92269 43621"
                     />
                   </div>
 
@@ -298,11 +298,11 @@ const Contact = () => {
                   </div>
                 </div>
                 <p className="text-green-100 mb-6">
-                  For immediate questions or to schedule a class, message me directly on WhatsApp. 
+                  For immediate questions or to schedule a class, message me directly on WhatsApp.
                   I typically respond within a few hours.
                 </p>
                 <a
-                  href="https://wa.me/919876543210?text=Hi! I'm interested in learning more about therapeutic yoga classes."
+                  href="https://wa.me/919226943621?text=Hi! I'm interested in learning more about therapeutic yoga classes."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-2 bg-white text-green-600 hover:bg-green-50 font-medium px-6 py-3 rounded-full transition-colors"
@@ -324,7 +324,7 @@ const Contact = () => {
                   </div>
                 </div>
                 <p className="text-gray-600 mb-6">
-                  Book your classes, workshops, or consultation calls directly through our 
+                  Book your classes, workshops, or consultation calls directly through our
                   integrated booking system powered by Google Calendar.
                 </p>
                 <button className="inline-flex items-center space-x-2 bg-sage-600 hover:bg-sage-700 text-white font-medium px-6 py-3 rounded-full transition-colors">

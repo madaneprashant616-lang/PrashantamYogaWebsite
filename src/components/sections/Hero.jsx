@@ -34,11 +34,14 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23059669' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-        }} />
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src="/images/hero-bg.png"
+          alt="Yoga Hall"
+          className="w-full h-full object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/40 to-white/90" />
       </div>
 
       {/* Floating Elements */}
@@ -51,7 +54,7 @@ const Hero = () => {
           className={`absolute ${element.position} hidden lg:block`}
         >
           <motion.div
-            animate={{ 
+            animate={{
               y: [0, -20, 0],
               rotate: [0, 5, -5, 0]
             }}
@@ -88,9 +91,9 @@ const Hero = () => {
             variants={itemVariants}
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
           >
-            <span className="block text-gray-900">Yoga for</span>
-            <span className="block gradient-animated">Stress Relief,</span>
-            <span className="block text-gray-900">Inner Peace & Mental Wellness</span>
+            <span className="block text-gray-900">Nurture Mind and Body</span>
+            <span className="block gradient-animated"> Traditional and</span>
+            <span className="block text-gray-900">Therapeutic Yoga.</span>
           </motion.h1>
 
           {/* Subtitle */}
@@ -98,8 +101,8 @@ const Hero = () => {
             variants={itemVariants}
             className="text-xl lg:text-2xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
-            Transform your mental health through therapeutic yoga. Specialized sessions for stress, 
-            anxiety, burnout recovery, and holistic wellness with{' '}
+            Transform your physical and mental health through therapeutic yoga. Specialized sessions for stress,
+            anxiety, burnout recovery, and holistic wellness with yoga Teacher{' '}
             <span className="font-semibold text-blue-700">Prashant Madane</span>
           </motion.p>
 
@@ -115,11 +118,14 @@ const Hero = () => {
               <span>Join a Class</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
-            
-            <button className="btn-secondary group flex items-center space-x-2">
+
+            <Link
+              to="/about"
+              className="btn-secondary group flex items-center space-x-2"
+            >
               <Play className="w-5 h-5 group-hover:scale-110 transition-transform" />
               <span>Watch Introduction</span>
-            </button>
+            </Link>
           </motion.div>
 
           {/* Trust Indicators */}
@@ -132,7 +138,7 @@ const Hero = () => {
               <p className="text-gray-600">Students Transformed</p>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-blue-700 mb-2">3+</div>
+              <div className="text-3xl font-bold text-blue-700 mb-2">5+</div>
               <p className="text-gray-600">Years Experience</p>
             </div>
             <div className="text-center">
