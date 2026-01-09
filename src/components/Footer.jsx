@@ -35,7 +35,7 @@ const Footer = () => {
   ]
 
   const stats = [
-    { icon: Users, value: '500+', label: 'Happy Students' },
+    { icon: Users, value: '1000+', label: 'Happy Students' },
     { icon: Award, value: '5+', label: 'Years Experience' },
     { icon: Clock, value: '1000+', label: 'Hours Taught' },
     { icon: Heart, value: '100%', label: 'Satisfaction Rate' }
@@ -90,24 +90,33 @@ const Footer = () => {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61579682413417"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-slate-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
+                aria-label="Facebook"
               >
                 <Facebook className="w-5 h-5" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                href="#"
+                href="https://www.instagram.com/prashantam_yoga?igsh=c3ppNzN6M2s1eGEx"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-slate-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
+                aria-label="Instagram"
               >
                 <Instagram className="w-5 h-5" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                href="#"
+                href="https://youtube.com/@prashantmadane7129?si=mPiqKqBoNDhfZF1m"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-slate-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
+                aria-label="YouTube"
               >
                 <Youtube className="w-5 h-5" />
               </motion.a>
@@ -171,8 +180,8 @@ const Footer = () => {
 
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                <a href="mailto:prashant@prashantamyoga.com" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  prashant@prashantamyoga.com
+                <a href="mailto:prashantmyoga@gmail.com" className="text-gray-300 hover:text-blue-400 transition-colors">
+                  prashantmyoga@gmail.com
                 </a>
               </div>
             </div>

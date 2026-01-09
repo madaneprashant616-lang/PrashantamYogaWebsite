@@ -12,7 +12,7 @@ const Navbar = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50)
     }
-    
+
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
@@ -32,33 +32,32 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'navbar-blur shadow-lg' : 'bg-transparent'
-      }`}
+      className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled ? 'navbar-blur shadow-lg' : 'bg-transparent'
+        }`}
     >
       <div className="container-custom">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 group">
+          <Link to="/" className="flex items-center space-x-3 group min-w-0">
             <motion.div
-  whileHover={{ rotate: 360 }}
-  transition={{ duration: 0.6 }}
-  className="h-12 w-12 md:h-14 md:w-14
+              whileHover={{ rotate: 360 }}
+              transition={{ duration: 0.6 }}
+              className="h-12 w-12 md:h-14 md:w-14
              overflow-hidden rounded-full
              bg-gradient-to-br from-blue-500 to-blue-700
              shadow-lg flex items-center justify-center"
->
-  <img
-    src="/prashantamyoga_logo.jpeg"
-    alt="Prashantam Yoga – Therapeutic Yoga for Mental Health"
-    title="Prashantam Yoga"
-    className="h-full w-full object-cover scale-[1.18]"
-    loading="eager"
-  />
-</motion.div>
-            <div>
-              <h1 className="text-2xl font-bold gradient-text">Prashantam Yoga Classes</h1>
-              <p className="text-sm text-gray-600 -mt-1">Mind Body Harmony</p>
+            >
+              <img
+                src="/prashantamyoga_logo.jpeg"
+                alt="Prashantam Yoga – Therapeutic Yoga for Mental Health"
+                title="Prashantam Yoga"
+                className="h-full w-full object-cover scale-[1.18]"
+                loading="eager"
+              />
+            </motion.div>
+            <div className="flex-1 min-w-0 mr-2">
+              <h1 className="text-lg sm:text-2xl font-bold gradient-text truncate">Prashantam Yoga Classes</h1>
+              <p className="text-xs sm:text-sm text-gray-600 -mt-1 truncate">Mind Body Harmony</p>
             </div>
           </Link>
 
@@ -72,11 +71,10 @@ const Navbar = () => {
               >
                 <Link
                   to={item.path}
-                  className={`relative font-medium transition-all duration-300 px-3 py-2 rounded-lg ${
-                    isActive(item.path) 
-                      ? 'text-blue-700 bg-blue-50' 
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50/50'
-                  }`}
+                  className={`relative font-medium transition-all duration-300 px-3 py-2 rounded-lg ${isActive(item.path)
+                    ? 'text-blue-700 bg-blue-50'
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50/50'
+                    }`}
                 >
                   {item.name}
                   {isActive(item.path) && (
@@ -127,11 +125,10 @@ const Navbar = () => {
                   <Link
                     to={item.path}
                     onClick={() => setIsOpen(false)}
-                    className={`block py-2 font-medium transition-colors ${
-                      isActive(item.path) 
-                        ? 'text-blue-700 border-l-4 border-blue-600 pl-4' 
-                        : 'text-gray-700 hover:text-blue-600 pl-4'
-                    }`}
+                    className={`block py-2 font-medium transition-colors ${isActive(item.path)
+                      ? 'text-blue-700 border-l-4 border-blue-600 pl-4'
+                      : 'text-gray-700 hover:text-blue-600 pl-4'
+                      }`}
                   >
                     {item.name}
                   </Link>

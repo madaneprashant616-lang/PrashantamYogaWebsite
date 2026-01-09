@@ -2,11 +2,11 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
-import { 
-  Award, 
-  BookOpen, 
-  Heart, 
-  Users, 
+import {
+  Award,
+  BookOpen,
+  Heart,
+  Users,
   ArrowRight,
   CheckCircle,
   Calendar,
@@ -34,7 +34,7 @@ const About = () => {
     },
     {
       icon: Users,
-      title: '500+ Students',
+      title: '1000+ Students',
       description: 'Lives transformed through therapeutic practice'
     },
     {
@@ -79,10 +79,10 @@ const About = () => {
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
                 Hi, I'm <span className="gradient-text">Prashant Madane</span>
               </h2>
-              
+
               <p className="text-xl text-gray-600 leading-relaxed mb-8">
-                At 28, I've dedicated my life to helping people find peace and healing through therapeutic yoga. 
-                My journey began with my own struggles with stress and burnout, which led me to discover the 
+                At 28, I've dedicated my life to helping people find peace and healing through therapeutic yoga.
+                My journey began with my own struggles with stress and burnout, which led me to discover the
                 transformative power of yoga for physical and mental health.
               </p>
             </div>
@@ -90,14 +90,14 @@ const About = () => {
             {/* Story */}
             <div className="space-y-6">
               <p className="text-gray-600 leading-relaxed">
-                After experiencing the challenges of modern professional life firsthand, I realized that 
-                traditional fitness approaches weren't addressing the root cause of stress and mental fatigue. 
+                After experiencing the challenges of modern professional life firsthand, I realized that
+                traditional fitness approaches weren't addressing the root cause of stress and mental fatigue.
                 This led me to specialize in therapeutic yoga - a holistic approach that treats both body and mind.
               </p>
-              
+
               <p className="text-gray-600 leading-relaxed">
-                Over the past 5+ years, I've had the privilege of guiding over 500 students through their 
-                healing journeys, helping them overcome stress, anxiety, burnout, and depression through 
+                Over the past 5+ years, I've had the privilege of guiding over 1000 students through their
+                healing journeys, helping them overcome stress, anxiety, burnout, and depression through
                 carefully designed yoga programs.
               </p>
             </div>
@@ -135,7 +135,7 @@ const About = () => {
                 <span>Learn More About Me</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
-              
+
               <Link
                 to="/contact"
                 className="btn-outline flex items-center justify-center"
@@ -177,7 +177,7 @@ const About = () => {
               </div>
 
               {/* Floating Achievement Cards */}
-              <div className="absolute -top-6 -right-6 z-20">
+              <div className="absolute -top-6 -right-6 z-20 hidden md:block">
                 <motion.div
                   initial={{ scale: 0, rotate: -10 }}
                   animate={inView ? { scale: 1, rotate: 0 } : {}}
@@ -196,7 +196,7 @@ const About = () => {
                 </motion.div>
               </div>
 
-              <div className="absolute -bottom-6 -left-6 z-20">
+              <div className="absolute -bottom-6 -left-6 z-20 hidden md:block">
                 <motion.div
                   initial={{ scale: 0, rotate: 10 }}
                   animate={inView ? { scale: 1, rotate: 0 } : {}}
@@ -208,7 +208,7 @@ const About = () => {
                       <Users className="w-5 h-5 text-green-600" />
                     </div>
                     <div>
-                      <div className="text-sm font-bold text-gray-900">500+</div>
+                      <div className="text-sm font-bold text-gray-900">1000+</div>
                       <div className="text-xs text-gray-600">Students</div>
                     </div>
                   </div>

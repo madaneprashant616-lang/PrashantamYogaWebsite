@@ -52,14 +52,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      details: 'prashant@prashantamyoga.com',
-      link: 'mailto:prashant@prashantamyoga.com'
+      details: 'prashantmyoga@gmail.com',
+      link: 'mailto:prashantmyoga@gmail.com'
     },
     {
       icon: MapPin,
       title: 'Location',
-      details: 'Pune, Maharashtra',
-      subtitle: 'Online & Offline Classes'
+      details: 'Prashantam Yoga Classes',
+      subtitle: 'Near P.M.C School No. 16, Vidyanagar, Pune'
     },
     {
       icon: Clock,
@@ -334,6 +334,22 @@ const Contact = () => {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="py-0">
+        <div className="w-full h-96 bg-gray-100">
+          <iframe
+            src="https://maps.google.com/maps?q=Prashantam%20Yoga%20Classes%20Pune&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Prashantam Yoga Classes Location"
+          ></iframe>
         </div>
       </section>
 
