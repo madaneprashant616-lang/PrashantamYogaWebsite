@@ -26,10 +26,12 @@ const Footer = () => {
   ]
 
   const services = [
+    'Holistic Wellness',
+    'Weight Management',
     'Stress Management Yoga',
-    'Burnout Recovery',
-    'Morning Yoga Sessions',
-    'Yoga Nidra for Insomnia',
+    'Back Pain Relief',
+    'Power Yoga',
+    'Traditional And Therapuetic Yoga',
     'Personal Therapy Sessions',
     'Group Workshops'
   ]
@@ -37,7 +39,7 @@ const Footer = () => {
   const stats = [
     { icon: Users, value: '1000+', label: 'Happy Students' },
     { icon: Award, value: '5+', label: 'Years Experience' },
-    { icon: Clock, value: '1000+', label: 'Hours Taught' },
+    { icon: Clock, value: '3000+', label: 'Hours Taught' },
     { icon: Heart, value: '100%', label: 'Satisfaction Rate' }
   ]
 
@@ -72,17 +74,25 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="p-2 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full">
-                <Flower2 className="h-6 w-6 text-white" />
-              </div>
+              <motion.div
+                whileHover={{ rotate: 360 }}
+                transition={{ duration: 0.6 }}
+                className="h-12 w-12 flex-shrink-0 overflow-hidden rounded-full bg-gradient-to-br from-blue-500 to-blue-700 shadow-lg flex items-center justify-center p-0.5"
+              >
+                <img
+                  src="/prashantamyoga_logo.jpeg"
+                  alt="Prashantam Yoga Logo"
+                  className="h-full w-full object-cover rounded-full"
+                />
+              </motion.div>
               <div>
-                <h3 className="text-xl font-bold text-white">Prashantam Yoga</h3>
-                <p className="text-blue-400 text-sm">Therapeutic Wellness</p>
+                <h3 className="text-xl font-bold text-white">Prashantam Yoga Classes</h3>
+                <p className="text-blue-400 text-sm">Mind Body Harmony</p>
               </div>
             </div>
 
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Transform your mental health through therapeutic yoga. Specializing in stress relief,
+              Transform your physical and mental health through therapeutic yoga. Specializing in stress relief,
               anxiety management, and burnout recovery for modern professionals.
             </p>
 

@@ -32,7 +32,7 @@ const Navbar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
-      className={`fixed w-full top-0 z-50 transition-all duration-300 ${scrolled ? 'navbar-blur shadow-lg' : 'bg-transparent'
+      className={`fixed top-0 left-0 right-0 z-50 w-full max-w-[100vw] transition-all duration-300 ${scrolled ? 'navbar-blur shadow-lg' : 'bg-transparent'
         }`}
     >
       <div className="container-custom">
