@@ -86,12 +86,14 @@ const Navbar = () => {
                 </Link>
               </motion.div>
             ))}
-            <Link
-              to="/contact"
+            <a
+              href="https://wa.me/919226943621?text=Hi!%20I'm%20interested%20in%20joining%20a%20yoga%20class"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary"
             >
               Join a Class
-            </Link>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -140,13 +142,15 @@ const Navbar = () => {
                 transition={{ delay: navItems.length * 0.1 }}
                 className="pt-4 pl-4"
               >
-                <Link
-                  to="/contact"
+                <a
+                  href="https://wa.me/919226943621?text=Hi!%20I'm%20interested%20in%20joining%20a%20yoga%20class"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setIsOpen(false)}
                   className="btn-primary inline-block"
                 >
                   Join a Class
-                </Link>
+                </a>
               </motion.div>
             </div>
           </motion.div>

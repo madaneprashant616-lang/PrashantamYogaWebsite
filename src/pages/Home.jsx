@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer'
 import Hero from '../components/sections/Hero'
 import Features from '../components/sections/Features'
 import About from '../components/sections/About'
+import StudioShowcase from '../components/sections/StudioShowcase'
 import Classes from '../components/sections/Classes'
 import Testimonials from '../components/sections/Testimonials'
 import Blog from '../components/sections/Blog'
@@ -25,6 +26,7 @@ const Home = () => {
       <Hero />
       <Features />
       <About />
+      <StudioShowcase />
       <Classes />
       <Testimonials />
       <Blog />

@@ -10,75 +10,83 @@ const Gallery = () => {
   const galleryImages = [
     {
       id: 1,
-      src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80',
-      alt: 'Peaceful yoga session at sunrise',
+      src: 'https://res.cloudinary.com/dbovfxnog/image/upload/f_auto,q_auto,w_1200/v1768030292/WhatsApp_Image_2026-01-10_at_12.40.37_olf98e.jpg',
+      alt: 'Group yoga session at Prashantam Yoga studio',
       category: 'sessions',
-      title: 'Morning Yoga Practice',
-      description: 'Start your day with mindful movement and breathing'
+      title: 'Group Yoga Session',
+      description: 'Students practicing yoga together in a calm and focused environment'
     },
     {
       id: 2,
-      src: 'https://images.unsplash.com/photo-1588286840104-8957b019727f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80',
-      alt: 'Group yoga workshop',
-      category: 'workshops',
-      title: 'Group Workshop Session',
-      description: 'Community healing through therapeutic yoga'
+      src: 'https://res.cloudinary.com/dbovfxnog/image/upload/f_auto,q_auto,w_1200/v1768030291/WhatsApp_Image_2026-01-10_at_12.40.37_1_zqe3uo.jpg',
+      alt: 'Therapeutic yoga practice for flexibility',
+      category: 'sessions',
+      title: 'Therapeutic Yoga Practice',
+      description: 'Gentle therapeutic yoga session focused on flexibility and alignment'
     },
     {
       id: 3,
-      src: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80',
-      alt: 'Meditation and mindfulness',
-      category: 'meditation',
-      title: 'Mindfulness Meditation',
-      description: 'Deep relaxation and mental clarity practice'
+      src: 'https://res.cloudinary.com/dbovfxnog/image/upload/f_auto,q_auto,w_1200/v1768030290/WhatsApp_Image_2026-01-10_at_12.38.14_bwi4af.jpg',
+      alt: 'Yoga students performing asanas in class',
+      category: 'sessions',
+      title: 'Yoga Asana Practice',
+      description: 'Structured yoga asana practice under expert guidance'
     },
     {
       id: 4,
-      src: 'https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80',
-      alt: 'Outdoor yoga practice',
+      src: 'https://res.cloudinary.com/dbovfxnog/image/upload/f_auto,q_auto,w_1200/v1768030289/WhatsApp_Image_2026-01-10_at_12.38.15_aoien9.jpg',
+      alt: 'Calm indoor yoga class environment',
       category: 'sessions',
-      title: 'Nature Connection',
-      description: 'Practicing yoga in harmony with nature'
+      title: 'Indoor Yoga Class',
+      description: 'Peaceful indoor yoga session designed for physical and mental balance'
     },
     {
       id: 5,
-      src: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80',
-      alt: 'Therapeutic yoga poses',
-      category: 'therapy',
-      title: 'Therapeutic Asanas',
-      description: 'Specialized poses for stress relief and healing'
+      src: 'https://res.cloudinary.com/dbovfxnog/image/upload/f_auto,q_auto,w_1200/v1768030288/WhatsApp_Image_2026-01-10_at_12.38.17_qdyyav.jpg',
+      alt: 'Yoga posture practice with focus and stability',
+      category: 'sessions',
+      title: 'Focused Yoga Practice',
+      description: 'Practicing yoga postures with awareness, breath control, and stability'
     },
     {
       id: 6,
-      src: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2299&q=80',
-      alt: 'Yoga studio atmosphere',
-      category: 'studio',
-      title: 'Serene Practice Space',
-      description: 'Creating the perfect environment for healing'
+      src: 'https://res.cloudinary.com/dbovfxnog/image/upload/f_auto,q_auto,w_1200/v1768030287/WhatsApp_Image_2026-01-10_at_12.38.19_pkzjdf.jpg',
+      alt: 'Yoga class guided by instructor',
+      category: 'sessions',
+      title: 'Guided Yoga Session',
+      description: 'Instructor-led yoga session emphasizing correct technique and safety'
     },
     {
       id: 7,
-      src: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2320&q=80',
-      alt: 'Breathing exercises',
-      category: 'meditation',
-      title: 'Pranayama Practice',
-      description: 'Breath work for anxiety and stress management'
+      src: 'https://res.cloudinary.com/dbovfxnog/image/upload/f_auto,q_auto,w_1200/v1768030270/WhatsApp_Image_2026-01-08_at_16.11.00_1_xkqa9w.jpg',
+      alt: 'Evening yoga practice session',
+      category: 'sessions',
+      title: 'Evening Yoga Session',
+      description: 'Relaxing evening yoga session to release stress and fatigue'
     },
     {
       id: 8,
-      src: 'https://images.unsplash.com/photo-1591343395082-e120087004b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2187&q=80',
-      alt: 'Workshop participants',
-      category: 'workshops',
-      title: 'Burnout Recovery Workshop',
-      description: 'Group healing and stress management techniques'
+      src: 'https://res.cloudinary.com/dbovfxnog/image/upload/f_auto,q_auto,w_1200/v1768030269/WhatsApp_Image_2026-01-08_at_16.11.00_2_yy4zpf.jpg',
+      alt: 'Yoga class focusing on posture correction',
+      category: 'sessions',
+      title: 'Posture Correction Yoga',
+      description: 'Yoga session aimed at improving posture and spinal alignment'
     },
     {
       id: 9,
-      src: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80',
-      alt: 'Personal training session',
-      category: 'therapy',
-      title: 'One-on-One Therapy',
-      description: 'Personalized therapeutic yoga sessions'
+      src: 'https://res.cloudinary.com/dbovfxnog/image/upload/f_auto,q_auto,w_1200/v1768030268/WhatsApp_Image_2026-01-08_at_16.11.01_ra37bb.jpg',
+      alt: 'Students practicing yoga with discipline',
+      category: 'sessions',
+      title: 'Disciplined Yoga Practice',
+      description: 'Group yoga practice encouraging discipline, consistency, and awareness'
+    },
+    {
+      id: 10,
+      src: 'https://res.cloudinary.com/dbovfxnog/image/upload/f_auto,q_auto,w_1200/v1768030270/WhatsApp_Image_2026-01-08_at_16.11.00_vsieox.jpg',
+      alt: 'Holistic yoga session at Prashantam Yoga',
+      category: 'sessions',
+      title: 'Holistic Yoga Session',
+      description: 'A holistic yoga session integrating body, breath, and mindfulness'
     }
   ]
 
@@ -91,8 +99,8 @@ const Gallery = () => {
     { id: 'studio', name: 'Studio', count: galleryImages.filter(img => img.category === 'studio').length }
   ]
 
-  const filteredImages = selectedCategory === 'all' 
-    ? galleryImages 
+  const filteredImages = selectedCategory === 'all'
+    ? galleryImages
     : galleryImages.filter(img => img.category === selectedCategory)
 
   const openModal = (image) => {
@@ -118,8 +126,17 @@ const Gallery = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Hero Section */}
-      <section className="relative pt-24 pb-16 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-blue-800/20"></div>
+      <section className="relative pt-32 pb-20 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://res.cloudinary.com/dbovfxnog/image/upload/f_auto,q_auto,w_1920/v1768030270/WhatsApp_Image_2026-01-08_at_16.11.00_1_xkqa9w.jpg"
+            alt="Gallery Hero"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-slate-900/80"></div>
+        </div>
+
         <div className="container-custom relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -128,8 +145,8 @@ const Gallery = () => {
             className="text-center max-w-4xl mx-auto"
           >
             <div className="flex items-center justify-center mb-6">
-              <Camera className="w-12 h-12 text-blue-600 mr-4" />
-              <h1 className="text-5xl lg:text-6xl font-bold gradient-text">
+              <Camera className="w-12 h-12 text-blue-200 mr-4" />
+              <h1 className="text-5xl lg:text-6xl font-bold text-white drop-shadow-md">
                 Gallery
               </h1>
             </div>
@@ -155,11 +172,10 @@ const Gallery = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setSelectedCategory(category.id)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                  selectedCategory === category.id
-                    ? 'bg-blue-600 text-white shadow-lg'
-                    : 'bg-white text-gray-700 hover:bg-blue-50 border border-gray-200'
-                }`}
+                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${selectedCategory === category.id
+                  ? 'bg-blue-600 text-white shadow-lg'
+                  : 'bg-white text-gray-700 hover:bg-blue-50 border border-gray-200'
+                  }`}
               >
                 {category.name} ({category.count})
               </motion.button>
@@ -196,11 +212,12 @@ const Gallery = () => {
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                         loading="lazy"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      {/* Gradient Overlay - Always visible for text readability */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 transition-opacity duration-300" />
                     </div>
-                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                      <h3 className="text-lg font-semibold mb-1">{image.title}</h3>
-                      <p className="text-sm text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-0 transition-transform duration-300">
+                      <h3 className="text-lg font-bold mb-1 text-white">{image.title}</h3>
+                      <p className="text-sm text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         {image.description}
                       </p>
                     </div>
@@ -238,7 +255,7 @@ const Gallery = () => {
               >
                 <ChevronLeft className="w-6 h-6" />
               </button>
-              
+
               <button
                 onClick={(e) => { e.stopPropagation(); nextImage() }}
                 className="absolute right-4 top-1/2 -translate-y-1/2 z-10 p-3 bg-white/20 hover:bg-white/30 rounded-full text-white transition-all duration-300"

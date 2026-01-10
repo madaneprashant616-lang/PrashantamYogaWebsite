@@ -108,7 +108,7 @@ const About = () => {
                 Meet <span className="gradient-text">Prashant Madane</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                A passionate therapeutic yoga teacher dedicated to helping people overcome stress, 
+                A passionate therapeutic yoga teacher dedicated to helping people overcome stress,
                 anxiety, and burnout through the healing power of yoga and mindfulness.
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
@@ -127,16 +127,14 @@ const About = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              <div className="aspect-[4/5] bg-gradient-to-br from-sage-300 to-sage-500 rounded-3xl overflow-hidden shadow-2xl">
-                <div className="w-full h-full flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <Users className="w-24 h-24 mx-auto mb-4 opacity-75" />
-                    <p className="text-lg">Prashant Madane</p>
-                    <p className="text-sm opacity-75">Therapeutic Yoga Teacher</p>
-                  </div>
-                </div>
+              <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
+                <img
+                  src="https://res.cloudinary.com/dbovfxnog/image/upload/v1768030267/WhatsApp_Image_2026-01-08_at_16.11.04_2_hctltc.jpg"
+                  alt="Prashant Madane - Therapeutic Yoga Teacher"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              
+
               {/* Stats Cards */}
               <div className="absolute -bottom-8 -left-8 bg-white p-4 rounded-2xl shadow-xl">
                 <div className="text-center">
@@ -144,7 +142,7 @@ const About = () => {
                   <div className="text-sm text-gray-600">Students</div>
                 </div>
               </div>
-              
+
               <div className="absolute -top-8 -right-8 bg-white p-4 rounded-2xl shadow-xl">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-sage-600">3+</div>
@@ -167,22 +165,22 @@ const About = () => {
             <h2 className="text-4xl font-bold text-gray-900 mb-6">My Story</h2>
             <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
               <p>
-                My journey to becoming a therapeutic yoga teacher wasn't planned – it was born from necessity. 
-                At 25, I was climbing the corporate ladder, working 12-hour days, and believing that stress 
+                My journey to becoming a therapeutic yoga teacher wasn't planned – it was born from necessity.
+                At 25, I was climbing the corporate ladder, working 12-hour days, and believing that stress
                 and anxiety were just the price of success.
               </p>
               <p>
-                Then burnout hit me like a wall. I was exhausted, anxious, couldn't sleep, and felt disconnected 
+                Then burnout hit me like a wall. I was exhausted, anxious, couldn't sleep, and felt disconnected
                 from everything that mattered. Traditional approaches weren't helping, and I felt lost.
               </p>
               <p>
-                That's when I discovered therapeutic yoga. Not the instagram-perfect poses, but real, healing practices 
-                that addressed my mental and emotional state. Within months, I experienced a transformation that 
+                That's when I discovered therapeutic yoga. Not the instagram-perfect poses, but real, healing practices
+                that addressed my mental and emotional state. Within months, I experienced a transformation that
                 seemed impossible – I was calm, energized, and most importantly, I felt like myself again.
               </p>
               <p>
-                This experience ignited a passion to help others who were struggling like I was. I dedicated myself 
-                to learning everything I could about yoga therapy, mental health, and how ancient practices could 
+                This experience ignited a passion to help others who were struggling like I was. I dedicated myself
+                to learning everything I could about yoga therapy, mental health, and how ancient practices could
                 address modern stress.
               </p>
             </div>
@@ -255,7 +253,7 @@ const About = () => {
           >
             <h2 className="text-4xl font-bold text-gray-900 mb-6">My Values & Approach</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Every aspect of my teaching is guided by these core principles that ensure 
+              Every aspect of my teaching is guided by these core principles that ensure
               each student receives the care and support they deserve.
             </p>
           </motion.div>
@@ -292,10 +290,10 @@ const About = () => {
                 Credentials & Training
               </h2>
               <p className="text-xl text-gray-600 mb-8">
-                My commitment to providing the highest quality therapeutic yoga instruction 
+                My commitment to providing the highest quality therapeutic yoga instruction
                 is backed by comprehensive training and ongoing education.
               </p>
-              
+
               <div className="space-y-4">
                 {certifications.map((cert, index) => (
                   <motion.div
@@ -313,8 +311,8 @@ const About = () => {
 
               <div className="mt-8 p-6 bg-sage-50 rounded-2xl">
                 <p className="text-gray-700 italic">
-                  "I believe in continuous learning. I regularly attend workshops, 
-                  conferences, and advanced training programs to stay current with 
+                  "I believe in continuous learning. I regularly attend workshops,
+                  conferences, and advanced training programs to stay current with
                   the latest developments in therapeutic yoga and mental health."
                 </p>
               </div>
@@ -354,7 +352,7 @@ const About = () => {
               Ready to Begin Your Healing Journey?
             </h2>
             <p className="text-xl text-sage-100 mb-8 max-w-2xl mx-auto">
-              Whether you're dealing with stress, anxiety, burnout, or simply want to 
+              Whether you're dealing with stress, anxiety, burnout, or simply want to
               improve your mental wellness, I'm here to guide and support you every step of the way.
             </p>
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
