@@ -138,14 +138,14 @@ const About = () => {
               {/* Stats Cards */}
               <div className="absolute -bottom-8 -left-8 bg-white p-4 rounded-2xl shadow-xl">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-sage-600">500+</div>
+                  <div className="text-2xl font-bold text-sage-600">1000+</div>
                   <div className="text-sm text-gray-600">Students</div>
                 </div>
               </div>
 
               <div className="absolute -top-8 -right-8 bg-white p-4 rounded-2xl shadow-xl">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-sage-600">3+</div>
+                  <div className="text-2xl font-bold text-sage-600">5+</div>
                   <div className="text-sm text-gray-600">Years</div>
                 </div>
               </div>

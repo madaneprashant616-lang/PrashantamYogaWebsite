@@ -18,11 +18,11 @@ const Blog = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://res.cloudinary.com/dbovfxnog/image/upload/f_auto,q_auto,w_1920/v1768030292/WhatsApp_Image_2026-01-10_at_12.40.37_olf98e.jpg"
+            src="https://res.cloudinary.com/dbovfxnog/image/upload/f_auto,q_auto,w_1920/v1768030270/WhatsApp_Image_2026-01-08_at_16.11.00_1_xkqa9w.jpg"
             alt="Blog Hero"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-blue-900/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-slate-900/80"></div>
         </div>
 
         <div className="container-custom relative z-10 text-center">

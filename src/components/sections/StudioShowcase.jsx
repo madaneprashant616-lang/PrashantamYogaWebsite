@@ -105,7 +105,7 @@ const StudioShowcase = () => {
                     {carouselImages.map((image, index) => (
                         <div
                             key={`${image.id}-${index}`}
-                            className="relative w-[300px] h-[200px] md:w-[400px] md:h-[300px] flex-shrink-0 rounded-2xl overflow-hidden shadow-lg group"
+                            className="relative w-[260px] h-[180px] md:w-[400px] md:h-[300px] flex-shrink-0 rounded-2xl overflow-hidden shadow-lg group"
                         >
                             <img
                                 src={image.src}
@@ -119,7 +119,7 @@ const StudioShowcase = () => {
                         </div>
                     ))}
                 </motion.div>
-            </div>
+            </div >
 
             <div className="flex justify-center mt-12">
                 <Link
@@ -130,7 +130,7 @@ const StudioShowcase = () => {
                     <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
             </div>
-        </section>
+        </section >
     );
 };
 
